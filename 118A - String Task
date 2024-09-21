@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s, a;
+    cin >> s;
+
+    int len = s.length();
+
+    for (int i = 0; i < len; i++)
+    {
+        s[i] = tolower(s[i]);
+
+        if (s[i] != 'a' && s[i] != 'o' && s[i] != 'y' && s[i] != 'e' && s[i] != 'u' && s[i] != 'i')
+        {
+            a += '.';
+            a += s[i];
+        }
+    }
+
+    cout<< a <<endl;
+
+    return 0;
+}
