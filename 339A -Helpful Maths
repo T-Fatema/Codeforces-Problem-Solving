@@ -1,0 +1,25 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    cin >> s;
+    int len = s.length();
+
+    for(int i=0; i<len; i++)
+    {
+        for(int j = 0 ; j<len-1; j++)
+        {
+            if(s[j] != '+')
+            {
+                if(s[j]>s[j+2])
+                {
+                    swap(s[j],s[j+2]);
+                }
+            }
+        }
+    }
+    cout << s <<endl;
+}
