@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n, x = 1, y =0;
+    cin >> n;
+
+    string s1, s2, s;
+    cin >> s1;
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        cin >> s;
+        if (s == s1)
+        {
+            x++;
+        }
+        else
+        {
+            s2 = s;
+            y++;
+        }
+    }
+    if (y > x)
+    {
+        cout << s2 << endl;
+    }
+    else cout << s1 << endl;
+
+    return 0;
+}
+
